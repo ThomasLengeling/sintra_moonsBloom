@@ -1,0 +1,8 @@
+#include "../include/Resources.h"
+
+1	ICON	"..\\resources\\cinder_app_icon.ico"
+
+RES_VERT_GLSL
+RES_FRAG_GLSL
+PHONG_FRAG_GLSL
+PHONG_VERT_GLSL

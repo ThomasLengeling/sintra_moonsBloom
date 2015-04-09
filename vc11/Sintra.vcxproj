@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4943B734-84F8-4630-9C12-C464BD14E0FB}</ProjectGuid>
+    <RootNamespace>Sintra</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\..\..\cinder_0.8.5_vc2012\include;..\..\..\cinder_0.8.5_vc2012\boost;..\blocks\Midi\include;..\blocks\OSC\src;..\blocks\KissFFT\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0602;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;KissFFT_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\cinder_0.8.5_vc2012\lib;..\..\..\cinder_0.8.5_vc2012\lib\msw;..\blocks\KissFft\lib\msw</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\..\..\cinder_0.8.5_vc2012\include;..\..\..\cinder_0.8.5_vc2012\boost;..\blocks\Midi\include;..\blocks\OSC\src;..\blocks\KissFft\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0602;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\cinder_0.8.5_vc2012\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;KissFFT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\cinder_0.8.5_vc2012\lib;..\..\..\cinder_0.8.5_vc2012\lib\msw;..\blocks\KissFft\lib\msw</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\blocks\KissFft\src\KissFFT.cpp" />
+    <ClCompile Include="..\blocks\KissFft\src\kiss\kiss_fft.c" />
+    <ClCompile Include="..\blocks\KissFft\src\kiss\kiss_fftr.c" />
+    <ClCompile Include="..\blocks\Midi\src\MidiHub.cpp" />
+    <ClCompile Include="..\blocks\Midi\src\MidiIn.cpp" />
+    <ClCompile Include="..\blocks\Midi\src\MidiMessage.cpp" />
+    <ClCompile Include="..\blocks\Midi\src\MidiOut.cpp" />
+    <ClCompile Include="..\blocks\Midi\src\RtMidi.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\OscBundle.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\OscListener.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\OscMessage.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\OscSender.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\osc\OscTypes.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\src\AudioAnaylzer.cpp" />
+    <ClCompile Include="..\src\MoonsApp.cpp" />
+    <ClCompile Include="..\src\Particle.cpp" />
+    <ClCompile Include="..\src\ParticleSystem.cpp" />
+    <ClCompile Include="..\src\ParticleSystemReactive.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\blocks\KissFft\src\KissFFT.h" />
+    <ClInclude Include="..\blocks\KissFft\src\kiss\kiss_fft.h" />
+    <ClInclude Include="..\blocks\KissFft\src\kiss\kiss_fftr.h" />
+    <ClInclude Include="..\blocks\KissFft\src\kiss\_kiss_fft_guts.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiConstants.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiExceptions.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiHeaders.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiHub.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiIn.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiMessage.h" />
+    <ClInclude Include="..\blocks\Midi\include\MidiOut.h" />
+    <ClInclude Include="..\blocks\Midi\include\RtError.h" />
+    <ClInclude Include="..\blocks\Midi\include\RtMidi.h" />
+    <ClInclude Include="..\blocks\OSC\src\OscArg.h" />
+    <ClInclude Include="..\blocks\OSC\src\OscBundle.h" />
+    <ClInclude Include="..\blocks\OSC\src\OscListener.h" />
+    <ClInclude Include="..\blocks\OSC\src\OscMessage.h" />
+    <ClInclude Include="..\blocks\OSC\src\OscSender.h" />
+    <ClInclude Include="..\blocks\OSC\src\ip\IpEndpointName.h" />
+    <ClInclude Include="..\blocks\OSC\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\blocks\OSC\src\ip\PacketListener.h" />
+    <ClInclude Include="..\blocks\OSC\src\ip\TimerListener.h" />
+    <ClInclude Include="..\blocks\OSC\src\ip\UdpSocket.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscException.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPacketListener.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\blocks\OSC\src\osc\OscTypes.h" />
+    <ClInclude Include="..\include\AudioAnaylzer.h" />
+    <ClInclude Include="..\include\Midi.h" />
+    <ClInclude Include="..\include\MoonsApp.h" />
+    <ClInclude Include="..\include\OscDetector.h" />
+    <ClInclude Include="..\include\Particle.h" />
+    <ClInclude Include="..\include\ParticleSystem.h" />
+    <ClInclude Include="..\include\ParticleSystemReactive.h" />
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\include\timeToggle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\blur_frag.glsl" />
+    <None Include="..\resources\blur_vert.glsl" />
+    <None Include="..\resources\frag.glsl" />
+    <None Include="..\resources\phong_frag.glsl" />
+    <None Include="..\resources\phong_vert.glsl" />
+    <None Include="..\resources\vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\resources\satie_01.mp3" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

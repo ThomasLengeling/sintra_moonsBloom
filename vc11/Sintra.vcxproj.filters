@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{FE2A29D0-3065-4C7F-BF7E-D42992D6B2A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Midi">
+      <UniqueIdentifier>{1B5D7B45-F453-41AD-92DF-5DB2785A29A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Midi\include">
+      <UniqueIdentifier>{92BBA6C9-5E20-4D5E-8CBA-B84AA340F867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Midi\src">
+      <UniqueIdentifier>{234FD08A-3803-487A-9BBB-1CDBCC05C031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC">
+      <UniqueIdentifier>{235EA8DA-7151-4CC6-A3BD-AC43EAB7B4A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src">
+      <UniqueIdentifier>{3CD99D11-0DC9-428E-978B-E48EF4FB9A28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\ip">
+      <UniqueIdentifier>{F961F947-F939-4A38-9508-00970D828B93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\osc">
+      <UniqueIdentifier>{FF3094AC-2EF4-4036-A381-4DF5115CF624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\ip\win32">
+      <UniqueIdentifier>{B0CE6903-4EF6-4BD8-978B-A3B487438376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\KissFFT">
+      <UniqueIdentifier>{ab3cb581-5a98-4ead-ae16-5f2228ff6b25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SintraApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\Midi\include\MidiConstants.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiExceptions.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiHeaders.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiHub.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiIn.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiMessage.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\MidiOut.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\RtError.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Midi\include\RtMidi.h">
+      <Filter>Blocks\Midi\include</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\Midi\src\MidiHub.cpp">
+      <Filter>Blocks\Midi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Midi\src\MidiIn.cpp">
+      <Filter>Blocks\Midi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Midi\src\MidiMessage.cpp">
+      <Filter>Blocks\Midi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Midi\src\MidiOut.cpp">
+      <Filter>Blocks\Midi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Midi\src\RtMidi.cpp">
+      <Filter>Blocks\Midi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscBundle.cpp">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscListener.cpp">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscMessage.cpp">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\OscSender.cpp">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\ip\IpEndpointName.cpp">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.cpp">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.cpp">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscReceivedElements.cpp">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\osc\OscTypes.cpp">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\OSC\src\OscArg.h">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscBundle.h">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscListener.h">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscMessage.h">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\OscSender.h">
+      <Filter>Blocks\OSC\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\IpEndpointName.h">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\NetworkingUtils.h">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\PacketListener.h">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\TimerListener.h">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\ip\UdpSocket.h">
+      <Filter>Blocks\OSC\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\MessageMappingOscPacketListener.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscException.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscHostEndianness.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscOutboundPacketStream.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPacketListener.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscPrintReceivedElements.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscReceivedElements.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\OSC\src\osc\OscTypes.h">
+      <Filter>Blocks\OSC\src\osc</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\NetworkingUtils.cpp">
+      <Filter>Blocks\OSC\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\OSC\src\ip\win32\UdpSocket.cpp">
+      <Filter>Blocks\OSC\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\KissFft\src\kiss\kiss_fft.c">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\KissFft\src\kiss\kiss_fftr.c">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\KissFft\src\KissFFT.cpp">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AudioAnaylzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MoonsApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParticleSystemReactive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\KissFft\src\kiss\kiss_fft.h">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\KissFft\src\kiss\kiss_fftr.h">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\KissFft\src\kiss\_kiss_fft_guts.h">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\KissFft\src\KissFFT.h">
+      <Filter>Blocks\KissFFT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\timeToggle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AudioAnaylzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Particle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MoonsApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Midi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ParticleSystemReactive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\OscDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\blur_frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\blur_vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\phong_frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\phong_vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\resources\satie_01.mp3">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
